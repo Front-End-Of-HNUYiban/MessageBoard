@@ -108,7 +108,7 @@ $(function(){
             }
         }
         (function(){
-            $("#main").on("touchmove",function(){
+            $("#main").on("touchstart",function(){
                 var amount=$(".inf-left").length;
                 var container=$(this);
                 if(container[0].scrollHeight-container[0].scrollTop-container.height()<30){
