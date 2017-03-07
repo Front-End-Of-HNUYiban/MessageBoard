@@ -55,7 +55,7 @@ $(function(){
             $.ajax({
                 type:"POST",
                 url:"../index.php",
-                contentType:"application/x-www-form-urlencoded",
+                contentType:"application/x-www-form-urlencoded;charset=utf-8",
                 data:{
                     class:klass,
                     subclass:subclass,
@@ -111,12 +111,11 @@ $(function(){
             $("#main").on("touchmove",function(){
                 var amount=$(".inf-left").length;
                 var container=$(this);
-                // 下面这句是做生成实验的
                 if(container[0].scrollHeight-container[0].scrollTop-container.height()<30){
                     $.ajax({
                         type:"POST",
                         url:"../index.php",
-                        contentType:"application/x-www-form-urlencoded",
+                        contentType:"application/x-www-form-urlencoded;charset=utf-8",
                         data:{
                             class:klass,
                             subclass:subclass,

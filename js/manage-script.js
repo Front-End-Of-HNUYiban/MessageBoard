@@ -23,7 +23,7 @@ $(function(){
         $.ajax({
             type:"POST",
             url:"../index.php",
-            contentType:"application/x-www-form-urlencoded",
+            contentType:"application/x-www-form-urlencoded;charset=utf-8",
             data:{
                 title:$("#title").val()||"",
                 link:$("#link").val()||"",
